@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wish</title> 
+   <link rel="stylesheet" href="main.css"> 
+   <script>
+    function validateName() {
+        var name = document.getElementById("name").value;
+        if (name.toLowerCase() === "shalu") {
+            window.location.href="last.html";
+            
+        } else {
+            alert("sodhi type cheyaku 'shalu' ani type chey");
+        }
+        return false; // Prevent form submission
+    }
+</script>
+</head>
+<body>
+    <div class="box">
+    <div class="content">
+        <div id="content1">
+        <form onsubmit="return validateName()">
+            <div class="box"> 
+            <div class="alltex">  
+            <input type="text" id="name" name="name" required class="mainfield"><br><br>
+            <input type="submit" value="Submit" required class="mainbutton">
+            </div>
+            </div>
+        </form>
+    </div>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', cursive;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('peakpx (3).jpg');
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+}
+
+.container {
+    text-align: center;
+}
+.image-container {
+    margin-bottom: 350px;
+}
+.image{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    top:-21px;
+    left:-21px;
+    right:-21px;
+    bottom:-21px;
+    background:black;
+    z-index: -21;
+    border-radius: 20px;
+    filter: drop-shadow(0 0 50px black) drop-shadow(0 0 30px black);
+}
+
+h1,h2 {
+    position: relative;
+    font-size: 6em;
+    background-image: url('peakpx\ \(5\).jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    margin: 60px;
+    top:-21px;
+    left:-21px;
+    right:-21px;
+    bottom:-21px;
+    z-index: -21;
+    filter:drop-shadow(0 0 50px black) drop-shadow(0 0 20px black);
+}
+h1 {
+    color: transparent;
+}
+
+h1::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: black;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid black;
+    animation: animate1 8s linear infinite;
+    filter: drop-shadow(0 0 20px black) drop-shadow(0 0 60px black);
+}
+
+h2 {
+    color: transparent;
+}
+
+h2::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: black;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid black;
+    animation: animate2 8s linear infinite;
+    filter: drop-shadow(0 0 20px black) drop-shadow(0 0 60px black);
+}
+
+@keyframes animate1 {
+    0%, 10%, 100% {
+        width: 0%;
+    }
+    70%, 90% {
+        width: 100%;
+    }
+}
+
+@keyframes animate2 {
+    0%, 10%, 100% {
+        width: 0%;
+    }
+    70%, 90% {
+        width: 100%;
+    }
+}

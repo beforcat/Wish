@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body{
+    margin:0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+    background-color:wheat;
+    background-size: cover;
+    font-family: 'poppins', cursive;
+    
+}
+.box{
+    position: relative;
+    width: 500px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #060c21;
+}
+.box:before{
+    content: '';
+    position: absolute;
+    top:-2px;
+    left:-2px;
+    right:-2px;
+    bottom:-2px;
+    background:#fff;
+    z-index: -1;
+}
+
+.box:after{
+    content: '';
+    position: absolute;
+    top:-2px;
+    left:-2px;
+    right:-2px;
+    bottom:-2px;
+    background:#fff;
+    z-index: -2;
+    filter: blur(40px);
+
+}
+.box:before,
+.box:after{
+    background: linear-gradient(235deg,pink,green,white);
+}
+.content{
+    padding: 20px;
+    box-sizing: border-box;
+    color: #fff;
+}
+.mainfield{
+    border-color: white;
+    color: white;
+    border: 10px solid;
+    border-radius: 10px;
+    width: 230px;
+    height: 30px;
+    background-color: transparent;
+    font-family: 'Delius Unicase';
+    font-size:30px;
+    font-weight: bold;
+}
+.mainbutton{
+    border-color: white;
+    color: white;   
+    font-size: 30px;
+    border: 10px solid;
+    border-radius: 10px;
+    width: 250px;
+    height: 60px;
+    background-color: transparent;
+    font-family: 'Delius Unicase';
+}
